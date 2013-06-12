@@ -21,3 +21,5 @@ setlocal omnifunc=necoghc#omnifunc
 let g:necoghc_enable_detailed_browse = 1
 map ,c :s/^/-- /<CR>
 map ,u :s/^-- //<CR>
+
+set conceallevel=0

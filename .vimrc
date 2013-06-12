@@ -71,21 +71,31 @@ if $TERM =~ '^screen-256color'
     map! <Esc>OF <End>
 endif
 
-" git integration in status line
-function! GitBranch()
-    let branch = system("git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* //'")
-    if branch != ''
-        return '   Git Branch: ' . substitute(branch, '\n', '', 'g')
-    endif
-    return ''
-endfunction
-
-function! CurDir()
-    return substitute(getcwd(), '/home/konstantine/', "~/", "g")
-endfunction
-
-" Format the statusline
-" Intruduces bug with curson movement: strange chars were printed
-" set statusline=\%F%m%r%h\%w\ \ cwd:\%r%{CurDir()}%h\ \%=\ %{GitBranch()}\ \|\ \Pos:\%l,\%c\ \(\%L)\ \ \%P
-
 imap jj <Esc>
+
+" powerline
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+
+" some usefull mappings
+
+" g<C-o> to create a new line above cursor
+nmap g<C-o> o<ESC>k
+" gO to create a new line below cursor in normal mode
+nmap gO O<ESC>j
+
+"Auto-center them
+nmap G Gzz
+nmap n nzz
+nmap N Nzz
+nmap } }zz
+nmap { {zz
+
+"quick pairs
+imap <leader>' ''<ESC>i
+imap <leader>" ""<ESC>i
+imap <leader>( ()<ESC>i
+imap <leader>[ []<ESC>i
+imap <leader>{ {}<ESC>i
+
+nmap <C-up> ddkP
+nmap <C-down> ddp
