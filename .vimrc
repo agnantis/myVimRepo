@@ -32,7 +32,7 @@ let g:haddock_docdir = "/usr/share/doc/ghc-doc/html/"
 
 " ghc-mod plugin
 " every time you save an *.hs file, it's getting compiled and linted
-autocmd BufWritePost *.hs GhcModCheckAndLintAsync
+" autocmd BufWritePost *.hs GhcModCheckAndLintAsync
 
 " use necoghc autocopletion
 " setlocal omnifunc=necoghc#omnifunc

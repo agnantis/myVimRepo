@@ -11,10 +11,6 @@
 setlocal include=^import\\s*\\(qualified\\)\\?\\s*
 setlocal includeexpr=substitute(v:fname,'\\.','/','g').'.'
 setlocal suffixesadd=hs,lhs,hsc
-" ghc-mod: Display check/lint status in statusline
-" see: https://github.com/eagletmt/ghcmod-vim/wiki/Customize
-" let &l:statusline = '%{empty(getqflist()) ? "[No Errors]" : "[Errors Found]"}' . (empty(&l:statusline) ? &statusline : &l:statusline)
-" set laststatus=2
 
 " neco-ghc plugin: omni-completion
 setlocal omnifunc=necoghc#omnifunc
