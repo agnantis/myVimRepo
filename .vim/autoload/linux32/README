@@ -1,0 +1,1 @@
+If you are on a 64Bit OS, copy this vimproc_unix.so to the parent dir (i.e. .vim/autoload/)
