@@ -99,3 +99,6 @@ imap <leader>{ {}<ESC>i
 
 nmap <C-up> ddkP
 nmap <C-down> ddp
+
+"relative numbers
+set relativenumber

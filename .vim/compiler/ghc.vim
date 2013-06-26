@@ -85,8 +85,8 @@ endfunction
 
 " KOSTAS
 set updatetime=1000
-autocmd CursorHold  *.hs :call GHC_ShowType(0)
-autocmd CursorHoldI *.hs :call GHC_ShowType(0)
+"autocmd CursorHold  *.hs :call GHC_ShowType(0)
+"autocmd CursorHoldI *.hs :call GHC_ShowType(0)
 autocmd VimEnter,BufEnter *.hs   :GHCReload
 "autocmd VimEnter,BufReadPost,FileReadPost *.hs :GHCReload
 
