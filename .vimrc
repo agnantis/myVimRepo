@@ -102,3 +102,8 @@ nmap <C-down> ddp
 
 "relative numbers
 set relativenumber
+
+"latex-suite config
+"(http://vim-latex.sourceforge.net/documentation/latex-suite/recommended-settings.html)
+set grepprg=\ -nH\ $*
+let g:tex_flavor='latex'
