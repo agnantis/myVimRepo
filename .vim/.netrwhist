@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/kwstas/.vim/bundle/vim-colors-solarized'
-let g:netrw_dirhist_2='/home/kwstas/.vim/bundle/vim-colors-solarized/.git'
-let g:netrw_dirhist_3='/home/kwstas/.vim/bundle/vim-colors-solarized/.git/logs'
-let g:netrw_dirhist_4='/home/konstantine/git/hsReasoner/src'
-let g:netrw_dirhist_5='/home/konstantine/git/mine/hsReasoner/test'
-let g:netrw_dirhist_6='/home/konstantine'

@@ -1,3 +1,5 @@
 *.swp
 *~
 .vim/autoload/vimproc_unix.so
+.vim/.netrwhist
+.vim/haskellmode.config
