@@ -8,7 +8,7 @@ set expandtab
 set autoindent
 set number
 set t_Co=16 "solarized color theme to work
-set background=light
+set background=dark
 colorscheme solarized
 set cursorline
 set laststatus=2
