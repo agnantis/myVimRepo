@@ -107,3 +107,9 @@ set relativenumber
 "(http://vim-latex.sourceforge.net/documentation/latex-suite/recommended-settings.html)
 set grepprg=\ -nH\ $*
 let g:tex_flavor='latex'
+
+"change backup files location
+set bdir-=.
+set bdir+=/tmp
+set dir-=.
+set dir+=/tmp
