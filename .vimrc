@@ -58,7 +58,8 @@ let g:neocomplcache_enable_at_startup = 1
 map <F2> :set background=light<CR>
 map <F3> :set background=dark<CR>
 map <F4> :NERDTreeToggle<CR>
-
+" enable greek language. Use Ctrl-6 to change layout
+map <F5> :set keymap=greek_utf-8<CR>
 """"""""""""""
 " tmux fixes "
 """"""""""""""
@@ -113,3 +114,7 @@ set bdir-=.
 set bdir+=/tmp
 set dir-=.
 set dir+=/tmp
+
+" testing
+autocmd FileType * syntax match BadWhitespace /\s\+$/
+highlight BadWhitespace ctermbg=DarkGreen
