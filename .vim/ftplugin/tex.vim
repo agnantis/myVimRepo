@@ -6,6 +6,8 @@ set iskeyword+=:
 "
 "set compile command
 let g:Tex_CompileRule_pdf = 'xelatex -output-directory=output $*'
+"set viewr command
+let g:Tex_ViewRuleComplete_pdf = 'gnome-open output/$*.pdf'
 "set target
 let g:Tex_DefaultTargetFormat = 'pdf'
 let g:Tex_MultipleCompileFormats ='pdf, aux'
