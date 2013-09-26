@@ -19,3 +19,6 @@ map ,c :s/^/-- /<CR>
 map ,u :s/^-- //<CR>
 
 set conceallevel=0
+
+" Format haskell code
+command FormatCode %!stylish-haskell
