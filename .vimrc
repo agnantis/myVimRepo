@@ -8,13 +8,15 @@ set expandtab
 set autoindent
 set number
 set t_Co=16 "solarized color theme to work
-set background=dark
+set background=light
 colorscheme solarized
 set cursorline
 set laststatus=2
 set foldlevelstart=20
 " disable bells
 set noeb vb t_vb=
+set listchars=trail:⋅
+set list
 
 " This assumes that ghc is in your path, if it is not, or you
 " wish to use a specific version of ghc, then please change
